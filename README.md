@@ -4,7 +4,7 @@ Python script to download general election results from the Turkish Supreme Elec
 ## Using it yourself
 
 1. Download or clone the repository.
-2. In `globals.py`, set line 20 to your desired election. The possible options are `GENERAL_2018`(done June 24th 2018) and `GENERAL_2023`(done May 14th 2023).
+2. In `globals.py`, set line 20 - the `ELECTION` constant - to your desired election. The possible options are `GENERAL_2018`(done June 24th 2018) and `GENERAL_2023`(done May 14th 2023).
 3. Run `province_downloader.py`. This will download the districts of every Turkish province and which province belongs to which parliamentary electoral region. The end result will be saved to `provinces.json`.
 4. Run `result_downloader.py`. This will download the election results(just the raw numbers - not how many MPs got elected etc.) by the each ballot box. The end result will be saved to `results.json`
     * **NOTE: This step will take a long time(about 3-4 hours) given the size of the file, the number of web requests required, and the rate limits of the YSK API. The script may use up to 1 GB of RAM during the download, and the file size of `results.json` may exceed several GBs.**
