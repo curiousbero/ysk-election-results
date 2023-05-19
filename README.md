@@ -18,7 +18,7 @@ Get list of provinces in Turkey.
 
 #### Query parameters
 * `secimId` - Election ID.
-* `secimTuru` - Election type(8 for parliamentary, 9 for presidential).
+* `secimTuru` - Election type(8 for parliamentary, 9 for presidential). If the value 8 is passed, then the endpoint returns the list of electoral regions instead of the list of provinces.
 
 ### `/getIlceListWithSecim`
 TODO
