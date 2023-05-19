@@ -19,6 +19,9 @@ At least Python 3.8 is required for running this script.
 ## Known issues
 * In `provinces.json`, the name of the provinces, if the province has more than 1 electoral region, is saved as `{PROVINCE}-1`.
 
+## Data extractions
+* June 24th 2018 elections - [results.json on Google Drive](https://drive.google.com/file/d/1WYxiMW7zCIZm6tGKmpH_R0RvCPW2uoSF/view?usp=sharing)
+
 ## Inner workings
 The data source for the election results is YSK's Open Data Portal(accessible [here](https://acikveri.ysk.gov.tr/anasayfa)). The Open Data Portal does not have documentation for an API, however the API used under the hood is not hard to reverse-engineer. The core API URL is `https://acikveri.ysk.gov.tr/api/` and the 4 endpoints used in this script are:
 
